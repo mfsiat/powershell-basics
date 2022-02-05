@@ -23,6 +23,12 @@ Get-Service -Name Service_Name
 Get-Help Get-Service -Examples
 ```
 
+- Example 
+```
+Get-Service -Name "WinRM" -ComputerName "localhost", "Server01", "Server02" |
+    Format-Table -Property MachineName, Status, Name, DisplayName -auto
+```
+
 ## Commands 
 ```
 # Check Version 
